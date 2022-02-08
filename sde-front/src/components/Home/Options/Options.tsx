@@ -1,7 +1,7 @@
 import { MoreOutlined } from '@ant-design/icons';
 import { Col, Dropdown, Menu, Row } from 'antd';
 import { FC } from 'react';
-import { setDarkTheme, setLightTheme } from '../helper/changeLayoutAppearance';
+import { setDarkTheme, setLightTheme } from '../../helper/changeLayoutAppearance';
 
 const { Item } = Menu;
 

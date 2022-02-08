@@ -1,9 +1,9 @@
 import { Button, Card, Col, Layout, Row, Select, Typography } from 'antd';
 import { Content } from 'antd/lib/layout/layout';
 import React, { FC } from 'react';
-import Options from '../Options/Options';
 import { Difficulties } from '../types/enum';
 import MendelIcon from './MendelIcon/MendelIcon';
+import Options from './Options/Options';
 
 const { Option } = Select;
 
@@ -12,7 +12,14 @@ const Home: FC = () => {
         <Layout>
             <Content>
                 <Row justify="space-around" align="middle" className="background-primary">
-                    <Col span={6}>
+                    <Col
+                        xxl={{ span: 6 }}
+                        xl={{ span: 8 }}
+                        lg={{ span: 12 }}
+                        md={{ span: 16 }}
+                        sm={{ span: 18 }}
+                        xs={{ span: 22 }}
+                    >
                         <Card className="home-card">
                             <Row justify="space-around" align="middle" gutter={[8, 8]}>
                                 <Col span={24} className="home-card-image center-everything">
@@ -40,7 +47,7 @@ const Home: FC = () => {
                                 </Col>
                                 <Col span={24} />
                                 <Col span={12}>
-                                    <Button type="ghost" className="w-100">
+                                    <Button type="primary" className="w-100">
                                         Jogar
                                     </Button>
                                 </Col>
